@@ -11,7 +11,9 @@ public class SalesService {
     }
 
     public long avg(long[] sales) {
-        return sum(sales) / sales.length;
+        long sum = sum(sales);
+        return sum / sales.length;
+
     }
 
     public int aboveAvg(long[] sales) {
